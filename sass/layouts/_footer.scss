@@ -1,10 +1,14 @@
 .footer-container {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   
   .contacts {
-    margin-right: 70px;
+    // margin-right: 70px;
+    margin: 0 auto;
+    text-align: center;
   }
   
   .footer {
@@ -20,6 +24,8 @@
       line-height: 1.14;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+      text-align: center;
+      margin-top: 60px;
     }
     &-address {
       font-style: normal;
@@ -124,6 +130,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
+  text-align: center;
+  margin-top: 60px;
   }
   
   .input-subscribe {

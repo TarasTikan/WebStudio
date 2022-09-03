@@ -10,14 +10,14 @@
       text-align: center;
       letter-spacing: 0.03em;
       margin-bottom: 30px;
-      @media screen and (min-width: 1200px) {
+      @include desktop {
         font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
       }
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       padding-top: 94px;
       padding-bottom: 94px;
     }
@@ -41,10 +41,10 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 100%;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: calc((100% - 30px) / 2);
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       width: calc((100% - 30px) / 5);
     }
   }

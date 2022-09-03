@@ -259,12 +259,18 @@ body {
 }
 
 .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .feture-wrap {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--accent-color-2);
   border-radius: 4px;
@@ -278,10 +284,22 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .feature-list .feature-iteam {
-  width: 270px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature-list .feature-iteam {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list .feature-iteam {
+    width: calc((100% - 30px) / 5);
+    width: 270px;
+  }
 }
 .feature-list .feature-title {
   font-weight: 700;
@@ -289,6 +307,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feature-list .feature-title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list .feature-title {
+    text-align: start;
+  }
 }
 
 .feature-text {
@@ -301,6 +330,21 @@ body {
 
 .work {
   padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work__list {
@@ -446,36 +490,59 @@ body {
 }
 
 .company {
-  padding-top: 94px;
   text-align: center;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .company {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .company-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .company-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
 
 .company-list {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .company-iteam {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .company-iteam {
+    width: calc((100% - 30px) / 4);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-iteam {
+    width: calc((100% - 30px) / 7);
+  }
 }
 .company-iteam:hover, .company-iteam:focus {
   border-color: var(--accent-color);
@@ -497,11 +564,13 @@ body {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .contacts {
-  margin-right: 70px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer {
@@ -518,6 +587,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
 }
 .footer-address {
   font-style: normal;
@@ -616,6 +687,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
+  text-align: center;
+  margin-top: 60px;
 }
 
 .input-subscribe {
