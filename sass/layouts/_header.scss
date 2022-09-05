@@ -6,7 +6,14 @@
   .header {
     border-bottom: 1px solid #ececec;
   }
-  
+
+  .navigation {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
   .navigation__list {
     list-style: none;
     display: flex;
@@ -95,4 +102,16 @@
     margin-left: auto;
     align-items: center;
     justify-content: center;
+    display: none;
+    @include desktop {
+      display: block;
+      display: flex;
+    }
+  }
+
+  .open-btn-menu {
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    cursor: pointer;
   }

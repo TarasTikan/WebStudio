@@ -1,13 +1,8 @@
 .work {
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
   @include desktop {
     display: block;
-  }
+  } 
+    display: none;
     padding-bottom: 94px;
   }
   

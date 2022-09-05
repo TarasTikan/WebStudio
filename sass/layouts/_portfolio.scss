@@ -1,13 +1,25 @@
 .filtr {
-    padding: 94px 0;
+    padding: 60px 0;
+    @include desktop {
+      padding: 94px 0;
+    }
   }
   
   .filtr-list-btn {
     list-style: none;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     gap: 8px;
-    justify-content: center;
+    flex-wrap: wrap;
+    // min-width: 326px;
+    @include tablet {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    @include desktop {
+      justify-content: center;
+      margin-bottom: 34px;
+    }
   }
   
   .filtr-list {
@@ -16,6 +28,12 @@
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    @include tablet {
+      justify-content: start;
+    }
+    @include desktop {
+      justify-content: center;
+    }
   }
   
   .filtr-btn {
@@ -57,6 +75,12 @@
   
   .filtr-cards {
     background-color: var(--primary-bg-color);
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      max-width: 370px;
+    }
   }
   
   
