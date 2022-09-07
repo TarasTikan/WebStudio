@@ -20,6 +20,7 @@
     }
     @include desktop {
       margin-right: 70px;
+      text-align: start;
     }
   }
   
@@ -38,6 +39,9 @@
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 20px;
+      @include desktop {
+        text-align: start;
+      }
     }
     &-address {
       font-style: normal;
@@ -112,8 +116,10 @@
     display: flex;
     gap: 10px;
     list-style: none;
-    justify-content: center;
     margin-top: 20px;
+    @include mobile {
+      justify-content: center;
+    }
   }
   
   .footer-soc-link {
