@@ -128,7 +128,17 @@ body {
 
 .header .container {
   display: flex;
-  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .header .container {
+    height: 60px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .container {
+    height: 80px;
+  }
 }
 
 .header {

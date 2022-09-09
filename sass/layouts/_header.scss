@@ -1,6 +1,12 @@
 .header .container {
     display: flex;
-    align-items: center;
+    @include mobile {
+      height: 60px;
+      align-items: center;
+    }
+    @include tablet {
+      height: 80px;
+    }
   }
   
   .header {
