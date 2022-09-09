@@ -29,6 +29,9 @@
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   
   .team-wrap {
@@ -45,7 +48,7 @@
       width: calc((100% - 30px) / 2);
     }
     @include desktop {
-      width: calc((100% - 30px) / 5);
+      width: calc((100% - 30px) / 4);
     }
   }
   
