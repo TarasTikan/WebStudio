@@ -117,9 +117,7 @@
     gap: 10px;
     list-style: none;
     margin-top: 20px;
-    @include mobile {
-      justify-content: center;
-    }
+    justify-content: center;
   }
   
   .footer-soc-link {
